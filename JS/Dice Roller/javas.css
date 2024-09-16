@@ -1,0 +1,40 @@
+#container{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border:none;
+    background-color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(80, 80, 163, 0.541);
+}
+
+button:active{
+    background-color: rgb(147, 147, 182);
+}
+
+input{
+    font-size: 2rem;
+    text-align: center;
+    width: 150px;
+    font-weight:bold;    
+}
+
+.imag img {
+    width: 50px;  
+    height: 50px; 
+    object-fit: contain;
+    border-radius: 10px;
+     
+}

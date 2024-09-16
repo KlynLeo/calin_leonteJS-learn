@@ -1,0 +1,111 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #333;
+    transition: background-color 1s ease, background 1s ease; 
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00796b;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cityInput {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+}
+
+.cityInput:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #00796b;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card h2 {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.tempDisplay {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.errorDisplay {
+    font-weight: bold;
+}
+
+.card.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    .cityInput, button[type="submit"], .card {
+        width: 90%;
+    }
+}

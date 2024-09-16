@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: top;
+    height: 89vh;
+}
+
+h2{
+    font-size: 4rem;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.861);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(255, 225, 0, 0.598);
+    box-shadow: 5px 5px 2px rgba(78, 78, 7, 0.724);
+}
+
+#clock{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: monospace, serif;
+    color: rgba(0, 0, 0, 0.863);
+    text-shadow: 2px 2px 2px rgb(92, 92, 92);
+    margin-bottom: 30px;
+}
+
+#controls button{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    min-width: 125px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#StartBtn{
+    color: white;
+    background-color:green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#StopBtn{
+    color: white;
+    background-color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#ResetBtn{
+    color: white;
+    background-color:gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#StartBtn:hover {
+    background-color:rgb(41, 178, 41);
+}
+
+#StopBtn:hover{
+    background-color:rgb(249, 99, 99);
+}
+#ResetBtn:hover{
+    background-color:rgb(174, 163, 163);
+}
